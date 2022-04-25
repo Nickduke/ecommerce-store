@@ -1,0 +1,7 @@
+# List all of the files and folders which you do not wish to push up to github
+.DS_Store
+.vscode
+designs/
+
+*.zip
+
