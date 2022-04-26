@@ -12,7 +12,25 @@
     // flex child
     li {
       // because we are using the default flex-direction value (row), the axis of alignment is the x-axis. Therefore flex-basis will represent the width property
-      flex-basis: calc(100% / 3);
+      flex-basis: calc(100% / 3 - 30px);
+      margin: 5px 15px;
+      text-align: center;
+    }
+    img {
+      border-radius: 20px;
+    }
+  }
+  .popularProduct {
+    font-weight: bold;
+  }
+  // PLSFIXTHIS is there a more elegant solution to remove the CSS to the nested span
+  .discountedPrice {
+    text-decoration: line-through;
+    color: rgba($color: $primary, $alpha: 0.5);
+    span {
+      text-decoration: none;
+      display: inline-block;
+      color: rgba($color: $primary, $alpha: 1);
     }
   }
 }

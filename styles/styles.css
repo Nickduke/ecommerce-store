@@ -608,8 +608,25 @@ header .headerContent .contentContainer {
       flex-wrap: wrap;
 }
 .productsMainContent .products li {
-  -ms-flex-preferred-size: 33.3333333333%;
-      flex-basis: 33.3333333333%;
+  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+      flex-basis: calc(33.3333333333% - 30px);
+  margin: 5px 15px;
+  text-align: center;
+}
+.productsMainContent .products img {
+  border-radius: 20px;
+}
+.productsMainContent .popularProduct {
+  font-weight: bold;
+}
+.productsMainContent .discountedPrice {
+  text-decoration: line-through;
+  color: rgba(8, 75, 109, 0.5);
+}
+.productsMainContent .discountedPrice span {
+  text-decoration: none;
+  display: inline-block;
+  color: #084b6d;
 }
 
 footer {
