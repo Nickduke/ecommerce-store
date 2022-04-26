@@ -3,7 +3,9 @@
   width: 90%;
   margin: 0 auto;
 }
-
+a {
+  display: inline-block;
+}
 button {
   color: $primary;
   background-color: transparent;
@@ -79,4 +81,10 @@ a {
       color: $solidWhite;
     }
   }
+}
+
+// this ensures that image elements obey the dimensions of their parents
+img {
+  width: 100%;
+  display: block;
 }

@@ -376,6 +376,10 @@ a {
   margin: 0 auto;
 }
 
+a {
+  display: inline-block;
+}
+
 button {
   color: #084b6d;
   background-color: transparent;
@@ -451,6 +455,11 @@ a.button:hover {
 a.button:focus {
   background-color: #084b6d;
   color: #fff;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 .navBar {
@@ -531,49 +540,6 @@ header .headerContent .contentContainer {
   width: 65%;
 }
 
-footer {
-  background-color: #084b6d;
-  color: #fff;
-  padding: 90px 0 50px 0;
-}
-footer .footerFlexContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 90px;
-}
-footer .footerFlexContainer h4 {
-  color: #fff;
-}
-footer .footerNav {
-  width: 40%;
-}
-footer .footerNav nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-footer .footerNav nav ul {
-  width: 33%;
-}
-footer .footerNav nav a {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-}
-footer .footerNav nav a:hover {
-  color: white;
-}
-footer .footerNav nav a:focus {
-  color: white;
-}
-
 .categoryGallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +592,67 @@ footer .footerNav nav a:focus {
 }
 .categoryGallery .itemFour {
   background-color: #f9d3d3;
+}
+
+.productsMainContent section {
+  padding: 75px 0;
+}
+.productsMainContent h2 {
+  text-align: center;
+}
+.productsMainContent .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.productsMainContent .products li {
+  -ms-flex-preferred-size: 33.3333333333%;
+      flex-basis: 33.3333333333%;
+}
+
+footer {
+  background-color: #084b6d;
+  color: #fff;
+  padding: 90px 0 50px 0;
+}
+footer .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 90px;
+}
+footer .footerFlexContainer h4 {
+  color: #fff;
+}
+footer .footerNav {
+  width: 40%;
+}
+footer .footerNav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footerNav nav ul {
+  width: 33%;
+}
+footer .footerNav nav a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+footer .footerNav nav a:hover {
+  color: white;
+}
+footer .footerNav nav a:focus {
+  color: white;
 }
 
 @media (max-width: 1000px) {

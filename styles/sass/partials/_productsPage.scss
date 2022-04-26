@@ -1,0 +1,18 @@
+.productsMainContent {
+  section {
+    padding: 75px 0;
+  }
+  h2 {
+    text-align: center;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+
+    // flex child
+    li {
+      // because we are using the default flex-direction value (row), the axis of alignment is the x-axis. Therefore flex-basis will represent the width property
+      flex-basis: calc(100% / 3);
+    }
+  }
+}
